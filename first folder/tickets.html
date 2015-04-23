@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+    <title>Результат - Сайт</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <style type="text/css">
+
+        * {
+            outline: none;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: #fff;
+            min-width: 1000px;
+            margin: 0;
+            padding: 0;
+            font: 13px Verdana, Helvetica, sans-serif;
+            color: #000;
+            overflow-y: visible;
+        }
+
+        h1, h3, h4, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            border: none;
+        }
+
+        .clear {
+            display: block;
+            clear: both;
+            font-size: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        #middle {
+            min-height: 100%;
+        }
+
+        #middle > div {
+            min-height: 0;
+            background: none;
+            border: none;
+        }
+
+        #middle > div > div, #content {
+            margin: 0 auto;
+        }
+
+        #middle > div > div {
+            width: 1000px;
+            margin: 0 auto;
+            background: none;
+            padding: 0;
+        }
+
+        #content {
+            background: none;
+            width: 998px;
+            min-height: 480px;
+            padding: 0;
+        }
+
+        
+.arial, .uid {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+
+.v-top {
+    vertical-align: top;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.w1 {
+    width: 1%;
+}
+
+.w-right {
+    width: 160px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.uid {
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+.order_num {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.address {
+    font: 13px 'Times New Roman', Times, serif;
+}
+
+.ticket_info {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#content .result h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#content .better_print {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#content .controls {
+    text-align: center;
+}
+
+#content .controls button {
+    font-size: 22px;
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+
+.cheque {
+    padding-bottom: 20px;
+}
+
+.cheque .text h3, .cheque .text p, .cheque-text {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.cheque .text p {
+    font-size: 18px;
+    margin: 5px 0 10px;
+    line-height: 1.5;
+}
+
+.cheque .text h3, .cheque-text {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.cheque .text b {
+    font-size: 24px;
+}
+
+.cheque .blank {
+    border-top: 1px dashed;
+    border-bottom: 1px dashed;
+    padding: 10px;
+}
+
+.cheque .blank .header {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.cheque .blank .orderDate {
+    font-size: 14px;
+}
+
+.cheque .blank .barcode {
+    padding-bottom: 5px;
+}
+
+.cheque .blank table {
+    width: 100%;
+    background: #000;
+    border-collapse: collapse;
+}
+
+.cheque .blank table tr {
+    background: #fff;
+}
+
+.cheque .blank table td, .cheque .blank table th {
+    padding: 2px 5px;
+    border: 1px solid;
+}
+
+.cheque .blank table th {
+    text-align: left;
+}
+
+.cheque .blank table.info th {
+    font-weight: normal;
+    width: 225px;
+}
+
+.cheque .blank table.info td, .cheque .blank table.places th {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cheque .blank .places {
+    margin-top: 10px;
+}
+
+.cheque .blank .places span {
+    font-weight: normal;
+}
+
+.cheque .blank .prices {
+    padding: 5px 0 10px;
+}
+
+.cheque .blank .price_info {
+    border: 0;
+    border-collapse: collapse;
+}
+
+.cheque .prices h4 {
+    font-size: 14px;
+}
+
+.cheque .electronic {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+}
+
+.cheque .electronic .info p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.cheque .electronic .part1 tr:first-child {
+    height: 42px;
+}
+
+.cheque .electronic .part2 tr:first-child td {
+    border-top: none;
+}
+
+.cheque .electronic tr:first-child td:first-child {
+    width: 5em;
+}
+
+.cheque .electronic .barcode {
+    padding: 5px 0 0;
+}
+
+.cheque .blank .ch-num-l {
+    white-space: nowrap;
+    border-right: none;
+}
+
+.cheque .blank .ch-num {
+    white-space: nowrap;
+    border-left: none;
+}
+
+.cheque .blank.electronic .ch-num {
+    width: 1px;
+    text-align: right;
+}
+
+#content .return-mrg {
+    margin-bottom: 20px;
+}
+
+.hostName {
+    display: none;
+}
+
+@media print {
+    @page {
+        margin: 1cm .5cm;
+    }
+
+    body {
+        background: #fff;
+        overflow-y: visible;
+    }
+
+    #middle > div {
+        min-height: 0;
+        background: none;
+        border: none;
+    }
+
+    #middle > div > div, #content {
+        margin: 0 auto;
+        background: none;
+        padding: 0;
+    }
+
+    #header, #footer, #helloUser, .result, .controls, .version, .no_print, #content > div > p {
+        display: none;
+    }
+
+    .cheque .page-break {
+        page-break-after: always;
+    }
+
+    .testMode .hostName {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+<div id="middle">
+    <div>
+        <div>
+            <div id="content">
+                                    <div class="cheque">
+                <div class="text">
+        <h3>
+                            Документ на послуги                    </h3>
+    </div>
+    <div class="blank electronic" data-doctype="reserve">
+                    <table class="part1">
+    <tbody>
+        <tr>
+            <td class="nowrap" rowspan="2">
+                TEРM.№61
+            </td>
+            <td class="bold arial v-top">
+                ДОКУМЕНТ НА ПОСЛУГИ
+            </td>
+            <td class="bold nowrap">000B39B3-<span class="uid">09BD-769D-0001</span></td>
+            <td class="bold arial w-right" rowspan="2">
+                ПН:215793826073<br/>
+                ФН:2659023175<br/>
+                ЗН:ЗТ00000001<br/>
+                ФК:5161945
+            </td>
+        </tr>
+        <tr>
+            <td class="address v-top nowrap">ДП«ГІОЦ Укрзалізниці»<br/> м.Київ, вул. І.Франка, буд.21</td>
+            <td class="v-top order_num">#22678Щ1-ИЮ9-1203</td>
+        </tr>
+        <tr>
+            <td>МПС</td>
+            <td class="bold arial center" colspan="2">
+                ЗАМОВЛЕННЯ НЕОБХІДНО ВИКУПИТИ ДО 21:00 12.03.2015р.
+            </td>
+            <td class="align-right nowrap">10.03.2015 09:30</td>
+        </tr>
+    </tbody>
+</table>
+<table class="part2">
+    <tbody>
+        <tr>
+            <td colspan="2">Прізвище, Ім’я</td>
+            <td>Рінас Тетяна</td>
+            <td>Поїзд</td>
+            <td class="align-right ticket_info w-right">126 ОА </td>
+        </tr>
+        <tr>
+            <td class="nowrap w1">Відправлення</td>
+            <td class="w1">2214110</td>
+            <td class="upper ticket_info">Краматорськ</td>
+            <td>Вагон</td>
+            <td class="align-right ticket_info">04 П/Д</td>
+        </tr>
+        <tr>
+            <td class="nowrap">Призначення</td>
+            <td>2200001</td>
+            <td class="upper ticket_info">Київ-Пасажирський</td>
+            <td>Місце</td>
+            <td class="align-right ticket_info">051</td>
+        </tr>
+        <tr>
+            <td colspan="2">Дата/час відпр.</td>
+            <td class="ticket_info">14.03.2015 21:21</td>
+            <td></td>
+            <td class="align-right"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Дата/час приб.</td>
+            <td class="ticket_info">15.03.2015 09:13</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                ПОСЛУГА:РЕЗЕРВУВАННЯ<br/>
+                ВАРТ = 17,00 ГРН (ПОСЛ. 14,17 + ПДВ. 2,83)
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="barcode">
+    <img width="500" alt="barcode" src="data:image/gif;base64,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"/>
+</div>
+            </div>
+    <div class="hostName">[http://booking.uz.gov.ua/]</div>
+    <div class="clear"></div>
+
+        <div class="clear"></div>
+</div>
+
+                                <div class="clear"></div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
